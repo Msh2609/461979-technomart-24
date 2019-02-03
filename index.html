@@ -16,7 +16,7 @@
         <a href="#"><span class="mark">Закладка:</span></a>
       </p>
       <p class="header-basket">
-        <a href="#"> <span class="basket"> Корзина:</span></a>
+        <a href="#"> <span class="cart"> Корзина:</span></a>
       </p>
       <p class="checkout">
         <a href="#">Оформить заказ</a>
@@ -65,14 +65,14 @@
           </ul>
           <a class="about-us-link" href="about-us.html">Подробнее о компании</a>
         </section>
-        <section class="about-us">
-          <h3 class="about-us-h3">Контакты</h3>
-          <p class="about-us-text">Вы можете забрать товар сами, <br>
+        <section class="contacts">
+          <h3 class="contacts-h3">Контакты</h3>
+          <p class="contacts-text">Вы можете забрать товар сами, <br>
             заехав в наш офис:</p>
-          <a class="about-us-map" href="map.index">
+          <a class="contacts-map" href="map.index">
             <img src="img/map.jpg" alt="Большая Конюшенная, ул .19">
           </a>
-          <a class="about-us-link" href="about-us.html">Заблудились? Напишите нам!</a>
+          <a class="contacts-link" href="about-us.html">Заблудились? Напишите нам!</a>
         </section>
       </div>
     </main>
@@ -100,7 +100,7 @@
           <li><a href="delivery.html">Спецпредложения</a></li>
         </ul>
       </div>
-      <div class="footer-bottom">ё
+      <div class="footer-bottom">
         <p class="footer-copyright">
           2010-2017 Компания "Техномарт" <br>
           Все права защищены
@@ -120,6 +120,28 @@
         </p>
       </div>
     </footer>
+    <section class="modal-hidden-map">
+      <h2 class="visually-hidden">Карта с адресом</h2>
+        <button class="modal-close" id="btn-close-map" type="button">Закрыть</button>
+        <img src="img/map-hidden.jpg" width="940" height="447" alt="Офис магазина: ул. Большая Конюшенная, дом 19">
+    </section>
+    <form class="wright-us-form" action="http://echo.htmlacademy.ru" method="POST">
+        <button class="modal-close" id="btn-close" type="button">Закрыть</button>
+      <p class="write-us-item">
+        <label for="write-us-name"><b>Ваше имя:</b></label><br>
+        <input name="name" type="text" id="write-us-name" value="" placeholder="Имя Фамилия" tabindex="1">
+      </p>
+      <p class="write-us-item">
+          <label for="write-us-mail"><b>Ваш E-mail:</b></label><br>
+          <input name="mail" type="text" id="write-us-mail" value="" placeholder="email@example.com" tabindex="2">
+        </p> 
+        <p class="write-us-item">
+         <b>Текст письма:</b><br>
+          <textarea name="write-us" id="write-us" cols="30" rows="10" tabindex="3"></textarea>
+        </p>
+        <button class="button" type="submit">Отправить</button>
+    </form>
+    
   </body>
 
 </html>

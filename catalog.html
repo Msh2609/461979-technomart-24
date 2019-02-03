@@ -15,8 +15,8 @@
       <p class="header-mark">
         <a href="#"><span class="mark">Закладка:</span></a>
       </p>
-      <p class="header-basket">
-        <a href="#"> <span class="basket"> Корзина:</span></a>
+      <p class="header-cart">
+        <a href="#"> <span class="cart"> Корзина:</span></a>
       </p>
       <p class="checkout">
         <a href="#">Оформить заказ</a>
@@ -47,13 +47,13 @@
           <li><a href="delivery.html">Доставка</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
-        <div class="bread-crumbs">
-          <a class="bread-crumbs-link" href="">
+        <div class="breadcrumbs">
+          <a class="breadcrumbs-link" href="">
             <span class="icone-home"></span>
           </a>
-          <a class="bread-crumbs-catalog" href="">Каталог</a>
-          <a class="bread-crumbs-tool" href="">Инструмент</a>
-          <span class="bread-crumbs-catalogperforator">Перфораторы</span>
+          <a class="breadcrumbs-catalog" href="">Каталог</a>
+          <a class="breadcrumbs-tool" href="">Инструмент</a>
+          <span class="breadcrumbs-catalogperforator">Перфораторы</span>
         </div>
       </nav>
     </header>
@@ -61,7 +61,41 @@
       <h1 class="visually-hidden">Каталог</h1>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <!-- Здесь будет форма -->
+        <form class="filters-form" action="http://echo.htmlacademy.ru" method="POST">
+          <p><b>Производители:</b></p>
+           <p class="filters-item">
+            <input id="filtres-Bosch" name="Bosch" type="checkbox" value="Bosch" checked>
+            <label for="filtres-Bosch">Bosch</label>
+            </p>
+           <p class="filters-item">
+             <input id="filters-Intescol" name="Интерскол" type="checkbox" value="Интерскол">
+             <label for="filters-Intescol">Интерскол</label>
+          </p>
+           <p class="filters-item">
+             <input id="filters-Makita" name="Makita" type="checkbox" value="Makita" checked>
+             <label for="filters-Makita">Makita</label>
+          </p>
+           <p class="filters-item">
+             <input id="filters-Dewalt" name="Dewalt" type="checkbox" value=">Dewalt">
+             <label for="filters-Dewalt">Dewalt</label>
+          </p>
+           <p class="filters-item">
+             <input id="filters-Hitachi" name="Hitachi" type="checkbox" value="Hitachi">
+             <label for="filters-Hitachi">Hitachi</label>
+          </p>
+           <p><b>Питание</b></p>
+           <p class="filters-item">
+             <input id="accumulator" name="accumulator" type="radio" value="Аккумуляторные" checked>
+            <label for="accumulator">Аккумуляторные</label>
+            </p>
+           <p class="filters-item">
+             <input id="electric" name="electric" type="radio" value="Сетевые">
+             <label for="electric">Сетевые</label>
+          </p>
+           <p class="filters-item filters-item-submit">
+             <input type="submit" class="filters-buttom buttom"  value="Показать">
+            </p>
+        </form>
       </section>
       <section class="catalog">
         <h2 class="main-h2">Перфораторы</h2>
@@ -111,7 +145,7 @@
               <a class=" catalog-card-price" href="product-card.html">12500 р</a>
             </p>
             <p class="catalog-item-btns">
-              <a class="btn-bascet" href="#"><span>Купить</span></a>
+              <a class="btn-cart" href="#"><span>Купить</span></a>
               <a class="btn-mark" href="#">В закладки</a>
             </p>
           </li>
@@ -238,9 +272,9 @@
         </p>
         <div class="footer-social">
           <ul>
-            <li><a class="social-button" href="#">Вконтакте</a></li>
-            <li><a class="social-button" href="#">Фейсбук</a></li>
-            <li><a class="social-button" href="#">Инстаграм</a></li>
+            <li><a class="social-button" href="#" aria-label="Вконтакте">Вконтакте</a></li>
+            <li><a class="social-button" href="#" aria-label="Фейсбук">Фейсбук</a></li>
+            <li><a class="social-button" href="#" aria-label="Инстаграм">Инстаграм</a></li>
           </ul>
         </div>
         <p class="footer-Feedback">
@@ -251,5 +285,12 @@
         </p>
       </div>
     </footer>
+    <section class="modal modal-cart">
+      <button class="btn-close" id="btn-close" type="button">Закрыть</button>
+      <h3 class="modal-cart-h3">Товар добавлен в корзину!</h3>
+      <span class="icone-cart"></span>
+      <a class="btn-link btn-link-red" href="#">Оформить заказ</a>
+      <a class="btn-link" href="#">Продолжить покупки</a>
+    </section>
   </body>
-</html>
+</html> 
