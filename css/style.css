@@ -1,0 +1,296 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.wrapper {
+  width: 940px;
+  margin: auto;
+}
+
+.main-header-logo {
+padding: 12px 0;
+display: block;
+width: 220px;
+text-align: center;
+
+border-bottom: 5px solid #9c2b34;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-header-logo:hover {
+  background:#ae2f39;
+}
+
+.main-header-logo:active,
+.main-header-logo:focus {
+  background:#a02c35;
+}
+
+.search {
+  background: #30374a;
+  border: none;
+}
+
+.search::placeholder {
+  color:#ffffff;
+}
+
+.header-mark  a:hover,
+.header-basket a:hover,
+.header-mark  a:focus,
+.header-basket a:focus {
+  background: #282e3c;
+  color: #ffffff;
+}
+
+.header-mark  a:active,
+.header-basket a:active {
+  background: #1f232d;
+  color: #a1a2a5; 
+}
+.search:hover {
+  background: #282e3c;
+}
+
+.search:focus {
+  background: #ffffff;
+  color: #000000;
+ }
+
+.checkout a:hover,
+.checkout a:focus {
+  background: #81ba3f;
+}
+
+.checkout a:active {
+  background: #63843d;
+  color: #bac7ae;
+}
+
+.header-links-name {
+  color: #000000;
+}
+
+.header-links-name:hover,
+.header-links-name:focus {
+  color: #000000;
+}
+
+.header-links a:active {
+  color: #c9c9c9;
+}
+
+.header-links .header-links-out  {
+  color: #39435b;
+  text-decoration: underline;
+}
+
+.header-links .header-links-booking  {
+  color: #39435b;
+  text-decoration: underline;
+}
+
+.header-links-out:hover,
+.header-links-booking:hover {
+  color: #cd3944;
+  text-decoration: underline;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  background: #303749;
+}
+
+.site-navigation a:active {
+  background: #252b3b;
+  color: #9a9ca1;
+}
+
+.header-top a,
+.site-navigation a,
+.footer-navigation a {
+  color: #ffffff;
+}
+
+.main-header {
+  font-family: 'Cuprum', Arial, sans-serif;
+  background: #f4f6f8;
+}
+
+.header-top {
+  font-size: 17px;
+  line-height: 17px;
+  background-color: #30374a;
+}
+
+.main-header-logo,
+.footer-logo {
+  background-color: #cd3944;
+}
+
+.checkout a{
+  background: #7aa448;
+}
+
+.header-h1 {
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: normal;
+  color: #cd3944;
+}
+
+.tel {
+  color: #ce3945;
+}
+
+.header-links a{
+color: #000000;
+}
+
+.main-navigation {
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-size: 17px;
+  line-height: 17px;
+  text-transform: capitalize;
+
+  background-color: #3a445b;
+}
+
+.site-navigation,
+.footer-navigation,
+.about-us-list,
+.footer-products,
+.footer-social-btn {
+  list-style: none;
+}
+
+.about-us-h3,
+.contacts-h3 {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.about-us-text,
+.about-us-list,
+.contacts-text {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+
+.about-us-link,
+.contacts-link {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  background-color: #cd3944;
+  color: #ffffff;
+
+}
+
+.footer {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+
+  color: #ffffff;
+  background-color: #3a445b;
+}
+
+.footer-logo {
+  padding: 21px 0;
+  display: block;
+  width: 220px;
+  text-align: center;
+
+  border-bottom: 5px solid #9c2b34;
+}
+
+
+.footer-navigation a:hover,
+.footer-navigation a:focus {
+  text-decoration: underline;
+}
+
+
+.footer-navigation a:active {
+  color: #a5aab3;
+  text-decoration: none;
+}
+
+
+.footer-products a:hover,
+.footer-products a:focus {
+  text-decoration: underline;
+
+}
+
+.footer-products a:active {
+  color: #9f8f6f;
+  text-decoration: none;
+}
+
+.footer-contacts a{
+  color: #ffffff;
+}
+
+.footer-products a {
+  color: #f3d084;
+}
+
+.footer-bottom {
+  font-size: 18px;
+  line-height: 24px;
+
+  color: #ffffff;
+  background-color: #30374a;
+}
+
+.footer-social a{
+  color:#ffffff;
+}
+
+.social-button:hover,
+.social-button:focus,
+.social-button:active {
+  color: #cd3944;
+}
+
+.button {
+  color: #f3d084;
+}
+
+.button:hover,
+.button:focus {
+  color: #f3d084;
+  text-decoration: underline;
+}
+
+.button:active {
+  color: #cd3944;
+  text-decoration: none;
+
+}
+
+.modal-hidden-map {
+  visibility: hidden;
+}
+
+.wright-us-form {
+  visibility: hidden;
+}
