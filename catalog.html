@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8">
   <title>Техномарт»</title>
   <link href="css/normalize.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
- 
+
 </head>
+
 <body>
   <header class="main-header">
     <div class="header-top">
@@ -33,12 +35,12 @@
         <div class="header-h1">Интернет-магазин строительных материалов и&nbspинструментов для ремонта</div>
         <div class="header-contacts">
           <a class="tel" href="tel:+78125550555">+7 (812) 555-05-55</a>
-          <p class="adress"> г. Санкт-Петербург, ул. Б.Конюшенная, д.19/8</p>
+          <p class="adress"> г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
         <div class="header-links header-links_inner">
           <p class="header-links-name-wrap">
             <a class="header-links-name" href="#">
-              
+
               Равшан Джамшутович
             </a>
             <a class="header-links-exit" href=""></a>
@@ -69,17 +71,34 @@
   </header>
   <div class="breadcrumbs">
     <div class="wrapper">
-      <a class="breadcrumbs-link" href="#">
-        <span class="icone-home"></span>
-      </a>
-      <a class="breadcrumbs-catalog" href="#">Каталог</a>
-      <a class="breadcrumbs-tool" href="#">Инструмент</a>
-      <span class="breadcrumbs-catalogperforator">Перфораторы</span>
+      
+      <ul class="breadcrumbs-list">
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link" href="#">
+          <svg class="breadcrumbs-icon" x="0px" y="0px" width="15px" height="12px" viewBox="0 0 15 12"
+            enable-background="new 0 0 15 12" xml:space="preserve">
+            <g>
+              <polygon fill="#C1C6CE" points="3,8 3,12 7,12 7,8 9,8 9,12 13,12 13,8 8,3.516 	" />
+              <path fill="#C1C6CE" d="M14.831,6.365L13,4.751V0h-2v2.987L8.332,0.635c-0.02-0.017-0.043-0.023-0.064-0.037
+                     c-0.026-0.018-0.052-0.035-0.08-0.047C8.156,0.539,8.125,0.533,8.093,0.527C8.062,0.521,8.032,0.515,8,0.515
+                     c-0.031,0-0.061,0.006-0.092,0.012C7.875,0.533,7.845,0.539,7.813,0.552C7.785,0.563,7.76,0.581,7.733,0.598
+                     c-0.021,0.014-0.045,0.02-0.064,0.037l-6.498,5.73C0.964,6.548,0.944,6.864,1.126,7.071C1.225,7.183,1.363,7.24,1.501,7.24
+                     c0.118,0,0.236-0.041,0.331-0.125L8,1.677l6.169,5.438C14.265,7.199,14.383,7.24,14.5,7.24c0.139,0,0.276-0.058,0.375-0.169
+                     C15.058,6.864,15.038,6.548,14.831,6.365z" />
+            </g>
+          </svg>
+        </a></li>
+        <li class="breadcrumbs-item"><a href="#">Каталог</a></li>
+        <li class="breadcrumbs-item"><a href="#">Инструмент</a></li>
+        <li class="breadcrumbs-item  breadcrumbs-item_perforator">Перфораторы</li>
+      </ul>
     </div>
   </div>
-  <main class="container">
+  <main class="main-container">
     <div class="wrapper">
+        <h2 class="main-h2">Перфораторы</h2>
       <h1 class="visually-hidden">Каталог</h1>
+    <div class="container-wrapper">
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="filters-form" action="http://echo.htmlacademy.ru" method="POST">
@@ -125,7 +144,6 @@
         </form>
       </section>
       <section class="catalog">
-        <h2 class="main-h2">Перфораторы</h2>
         <ul class="catalog-list">
           <li class="catalog-iteam">
             <p class="catalog-iteam-img">
@@ -269,6 +287,7 @@
         </ul>
       </section>
     </div>
+    </div>
   </main>
   <footer class="footer">
     <div class="footer-top">
@@ -284,7 +303,7 @@
           <li><a href="#">Контакты</a></li>
         </ul>
         <div class="footer-contacts">
-          <p class="footer-adress"> г. Санкт-Петербург, ул. Б.Конюшенная, д.19/8</p>
+          <p class="footer-adress"> г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           <a class="footer-tel" href="tel:+78125550555">8(812)555-05-55</a>
         </div>
         <ul class="footer-products">
@@ -356,4 +375,5 @@
     <a class="btn-link" href="#">Продолжить покупки</a>
   </section>
 </body>
+
 </html>
