@@ -653,13 +653,177 @@ img {
 }
 
 .catalog-iteam {
+  position: relative;
+  list-style: none;
   width: 220px;
   height: 318px;
-  margin-bottom: 22px;
-
   border: 1px solid #e4e4e4;
   box-sizing: border-box;
+  padding-bottom: 20px;
+  overflow: hidden;
+  margin-bottom: 20px;
 }
+
+.catalog-iteam_new::after {
+  content: "new";
+  position: absolute;
+  width: 60px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  top: 4px;
+  right: -16px;
+  background: #ce3945;
+  color: #ffffff;
+  font-size: 12px;
+  font-family: "Cuprum";
+  transform: rotate(45deg);
+  z-index: 11;
+}
+
+.flag-new {
+  display: none;
+}
+
+.actions {
+  position: absolute;
+  margin: 0px;
+  padding-top: 43px;
+  width: 218px;
+  height: 180px;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-sizing: border-box;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.catalog-iteam:hover .actions {
+  opacity: 1;
+  visibility: visible;
+}
+
+.buy {
+  position: relative;
+  font-family: "Cuprum";
+  font-size: 14px;
+  width: 134px;
+  height: 35px;
+  line-height: 35px;
+  margin: auto;
+  margin-bottom: 8px;
+  text-align: center;
+  display: block;
+  background-color: #7aa448;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  border-bottom: 3px solid #4f7225;
+  border-radius: 3px;
+}
+
+.buy::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/cart-icon-green.svg");
+  left: 14px;
+  top: 11px;
+}
+
+.bookmark {
+  position: relative;
+  font-family: "Cuprum";
+  font-size: 14px;
+  width: 134px;
+  height: 35px;
+  line-height: 35px;
+  margin: auto;
+  text-align: center;
+  display: block;
+  color: #3a445b;
+  text-decoration: none;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  border: 3px solid #7aa448;
+  border-radius: 3px;
+}
+
+.catalog-iteam-img {
+  width: 218px;
+  height: 180px;
+  text-align: center;
+  margin: 0;
+}
+
+.catalog-iteam-img-link {
+  display: block;
+}
+
+.catalog-item-h3 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.catalog-iteam-h3-link {
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  padding: 0 20px;
+}
+
+.old-price {
+  font-family: "PT Sans";
+  font-size: 17px;
+  font-weight: 700;
+  color: #979797;
+  text-align: center;
+  text-decoration: line-through;
+  margin: 0;
+  margin-bottom: 10px;
+  height: 20px;
+}
+
+.catalog-item-price {
+  margin: 0;
+  height: 38px;
+  border-radius: 3px 0 0 3px;
+}
+
+.catalog-card-price {
+  position: relative;
+  font-family: "PT Sans";
+  width: 123px;
+  font-size: 17px;
+  line-height: 38px;
+  font-weight: 700;
+  display: block;
+  margin: auto;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  background-color: #ee3643;
+}
+
+.catalog-card-price::after {
+  position: absolute;
+  content: "";
+  border: 19px solid #ffffff;
+  border-left-color: #ee3643;
+  top: 0;
+  right: -38px;
+}
+
 
 .footer {
   font-family: "Cuprum", Arial, sans-serif;
