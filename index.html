@@ -181,21 +181,32 @@
     <button class="modal-close" id="btn-close-map" type="button">Закрыть</button>
     <img src="img/map-hidden.jpg" width="940" height="447" alt="Офис магазина: ул. Большая Конюшенная, дом 19">
   </section>
-  <form class="wright-us-form" action="http://echo.htmlacademy.ru" method="POST">
-    <button class="modal-close" id="btn-close" type="button">Закрыть</button>
-    <p class="write-us-item">
-      <label for="write-us-name">Ваше имя:</label>
-      <input name="name" type="text" id="write-us-name" value="" placeholder="Имя Фамилия" tabindex="1">
-    </p>
-    <p class="write-us-item">
-      <label for="write-us-mail">Ваш E-mail:</label>
-      <input name="mail" type="text" id="write-us-mail" value="" placeholder="email@example.com" tabindex="2">
-    </p>
-    <p class="write-us-item">
-      <label for="write-us">Текст письма:</label>
-      <textarea name="write-us-text" id="write-us" cols="30" rows="10" tabindex="3"></textarea>
-    </p>
-    <button class="btn" type="submit">Отправить</button>
-  </form>
+  <div class="modal">
+      <form class="wright-us-form" action="http://echo.htmlacademy.ru" method="POST">
+        <button class="modal-close" id="btn-close" type="button">
+          <span class="close-modal"></span>
+        </button>
+        <div class="wrapper-form">
+          <div class="form-initial">
+        <p class="write-us-item">
+          <label class="modal-write-us" for="write-us-name">Ваше имя:<br></label>
+          <input class="form-input" name="name" type="text" id="write-us-name" value="" placeholder="Имя Фамилия" tabindex="1">
+        </p>
+        <p class="write-us-item">
+          <label class="modal-write-us" class="" for="write-us-mail">Ваш E-mail:<br></label>
+          <input class="form-input" name="mail" type="text" id="write-us-mail" value="" placeholder="email@example.com" tabindex="2">
+        </p>
+      </div>
+      
+        <p class="write-us-item">
+          <label class="modal-write-us" for="write-us">Текст письма:<br></label>
+          <textarea class="form-textarea" name="write-us-text" id="write-us" cols="70" rows="7" placeholder="В свободной форме" tabindex="3"></textarea>
+        </p>
+      </div>
+        <p class="modal-wrapper-btn">
+        <button class="modal-btn" type="submit">Отправить</button>
+      </p>
+      </form>
+      </div>
 </body>
 </html>
