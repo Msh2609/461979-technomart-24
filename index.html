@@ -5,7 +5,8 @@
   <title>Техномарт»</title>
   <link href="css/normalize.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-</head>
+  </head>
+
 <body>
   <header class="main-header">
     <div class="header-top">
@@ -93,7 +94,7 @@
           <a class="contacts-map" href="#">
             <img src="img/map.jpg" alt="Большая Конюшенная, ул .19">
           </a>
-          <a class="contacts-link" href="#">Заблудились? Напишите нам!</a>
+          <div class="contacts-link js-modal-wright-us" >Заблудились? Напишите нам!</a>
         </section>
       </div>
     </div>
@@ -181,9 +182,9 @@
     <button class="modal-close" id="btn-close-map" type="button">Закрыть</button>
     <img src="img/map-hidden.jpg" width="940" height="447" alt="Офис магазина: ул. Большая Конюшенная, дом 19">
   </section>
-  <div class="modal">
+  <div class="modal js-modal-form">
       <form class="wright-us-form" action="http://echo.htmlacademy.ru" method="POST">
-        <button class="modal-close" id="btn-close" type="button">
+        <button class="modal-close modal-close-btn" id="btn-close" type="button">
           <span class="close-modal"></span>
         </button>
         <div class="wrapper-form">
@@ -208,5 +209,6 @@
       </p>
       </form>
       </div>
+      <script src="./js/script.js"></script>
 </body>
 </html>
