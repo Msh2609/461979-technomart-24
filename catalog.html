@@ -100,6 +100,24 @@
       <div class="container-wrapper">
         <section class="filters">
           <h2 class="visually-hidden">Фильтр товаров</h2>
+          <div class="filters-range">
+            <div class="filters-price">Фильтр:</div>
+            <div class="price">Цена:</div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="scale_green"></div>
+              </div>
+              <div class="range-toggle range-controls-min"></div>
+              <div class="range-toggle range-controls-max"></div>
+            </div>
+            <div class="price-controls">
+            <label  for="range-min"><input class="price-range" type="text" name="range-min" value="0"></label>
+            <span class="price-blank">&mdash;</span>
+            <label for="range-max"><input class="price-range" type="text" name="range-max" value="30000"></label>
+          </div>
+       
+
+          </div>
           <form class="filters-form" action="http://echo.htmlacademy.ru" method="POST">
             <div class="filters-fieldset">
               <div class="filters-border">
@@ -163,7 +181,35 @@
             <button class="filters-btn" type="submit">Показать</button>
           </form>
         </section>
+
         <section class="catalog">
+          <div class="scale-sorting">
+             <span class="sorting">Сортировка:</span>
+            <ul class="sorting-item">
+              <li><a class="sorting-price" href=""> По цене</a></li>
+              <li><a class="sorting-type" href=""> По типу</a></li>
+              <li><a class="sorting-function" href=""> По функционалу</a></li>
+            </ul>
+
+              <div class="sorting-selector"> 
+                <a class="sorting-icon-up-link" href="#"><span>
+                  <svg class="sorting-icon-up" x="0px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                  y="0px" width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve"
+                   fill="#c5c5c5">
+          
+                      <polygon class="sorting-icone-up-poly" fill="#c5c5c5" points="5.5,0 0,10 11,10"/>
+                      </svg>
+                    </span></a>
+             
+                    <a class="sorting-icon-down-link" href="#"><span>
+                  <svg  class="sorting-icone-down" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                  x="0px" y="0px" width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve"
+                  fill="#c5c5c5">
+                      <polyline class="sorting-icone-down-poly" fill="#c5c5c5" points="5.5,10 0,0 11,0 "/>
+                      </svg>
+                    </span></a>
+                    </div>
+          </div>
           <ul class="catalog-list">
             <li class="catalog-iteam ">
               <div class="flag flag-new">новинка</div>
@@ -356,6 +402,15 @@
             </li>
           </ul>
         </section>
+       
+      </div>
+      
+      <div class="paginator">
+          <a href="">1</a>
+          <a href="">2</a>
+          <a href="">3</a>
+          <a class="next" href="">следующая</a>
+        
       </div>
     </div>
   </main>
