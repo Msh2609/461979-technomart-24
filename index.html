@@ -15,8 +15,9 @@
         <a class="main-header-logo" href="index.html">
           <img src="img/logo.svg" width="110" height="18" alt="Логотип Техномарт">
         </a>
-        <P class="header-seach">
+        <p class="header-seach" >
           <input class="search" type="text" placeholder="Поиск:">
+          <span class="search-icon"></span>
         </p>
         <p class="header-mark">
           <a href="#">Закладка:</a>
@@ -58,7 +59,7 @@
     <div class="wrapper">
       <nav class="main-navigation">
         <ul class="site-navigation">
-          <li><a href="index.html">Главная</a></li>
+          <li><a class="active-link" href="index.html">Главная</a></li>
           <li><a href="#">Компания</a></li>
           <li><a href="catalog.html">Каталог</a></li>
           <li><a href="#">Новости</a></li>
@@ -172,8 +173,8 @@
       <div class="banner-slaider">
         <section class="slaider-index">
           <div class="slider">
-            <input type="radio" id="btn-1" name="toggle" checked>
-            <input type="radio" id="btn-2" name="toggle">
+            <input type="radio" id="btn-1" class="slider-input" name="toggle" checked>
+            <input type="radio" id="btn-2" class="slider-input" name="toggle">
             <ul class="slider-list">
               <li class="slider-item">
                 <div class="slider-content">
@@ -194,6 +195,8 @@
               <label for="btn-1"></label>
               <label for="btn-2"></label>
             </div>
+            <button class="slider-arrows-left"></button>
+            <button class="slider-arrows-right"></button>
           </div>
         </section>
         <div class="banner-flex-two">
@@ -267,7 +270,7 @@
     </div>
     <div class="popular">
       <div class="wrapper">
-        <div class="popular-heading-link">
+        <div class="popular-heading-link popular-heading-top">
           <h3 class="popular-heading">Популярные товары:</h3>
           <a class="popular-btn" href="#">Все популярные товары</a>
         </div>
@@ -374,7 +377,7 @@
               </a>
             </li>
             <li class="producer-item">
-              <a class="producer-item-butto" href="#">
+              <a class="producer-item-button" href="#">
                 <img src="./img/Makita.jpg" width="123" height="40" alt="bosch">
               </a>
             </li>
@@ -433,7 +436,7 @@
               </div>
               <div class="slaider-servis-info">
                 <h3 class="all-heading delivery-heading">Доставка</h3>
-                <p class="servis-text">
+                <p class="servis-text servis-text-delivery">
                   Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
                   Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
               </div>
@@ -483,7 +486,7 @@
     <div class="wrapper">
       <div class="about-us-contacts">
         <section class="about-us">
-          <h3 class="about-us-h3">Компания "Техномарт"</h3>
+          <h3 class="about-us-h3">Компания 	&#171;Техномарт&#187;</h3>
           <p class="about-us-text">Настоящий мужской шоппинг начинается здесь!
             Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей
             сэкономить на гастарбайтерах.
@@ -503,9 +506,9 @@
           <p class="contacts-text">Вы можете забрать товар сами, <br>
             заехав в наш офис:</p>
           <a class="contacts-map" href="#">
-            <img src="img/map.jpg" alt="Большая Конюшенная, ул .19">
+            <img src="img/map.jpg" width="300" height="157" alt="Большая Конюшенная, ул .19">
           </a>
-          <div class="contacts-link js-modal-wright-us">Заблудились? Напишите нам!</div>
+          <a href="#" class="contacts-link js-modal-wright-us">Заблудились? Напишите нам!</a>
         </section>
       </div>
     </div>
