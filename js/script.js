@@ -23,13 +23,10 @@ modalclose.addEventListener("click", function() {
   modalform.classList.remove("show");
 });
 
-//slider
 
 var slides = document.querySelectorAll(".slider-input");
 var arrowLeft = document.querySelector(".slider-arrows-left");
 var arrowRight = document.querySelector(".slider-arrows-right");
-
-//var activeSlide = document.querySelector('.slider-input').checked
 
 arrowLeft.addEventListener("click", function() {
   slides.forEach(function(slide, index) {
