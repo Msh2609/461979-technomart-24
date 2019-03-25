@@ -1437,6 +1437,7 @@ img {
   padding-top: 45px;
   z-index: 12;
   background-color: #ffffff;
+  overflow: hidden;
 }
 
 .modal.show {
@@ -1785,23 +1786,23 @@ img {
 }
 
 .slider-arrows-left,
-.slider-arrows-right{
+.slider-arrows-right {
   width: 23px;
   height: 42px;
   border: none;
   position: absolute;
   top: 50%;
   margin-top: -21px;
-  background-color: transparent
+  background-color: transparent;
 }
 
-.slider-arrows-left{
+.slider-arrows-left {
   background-image: url(../img/icon-left.svg);
   background-repeat: no-repeat;
   left: 30px;
 }
 
-.slider-arrows-right{
+.slider-arrows-right {
   background-image: url(../img/icon-right.svg);
   background-repeat: no-repeat;
   right: 30px;
@@ -1947,7 +1948,7 @@ section.slaider-index {
   justify-content: space-between;
   background-color: #f8f5f0;
   margin: 0;
-  
+
   padding: 0;
   padding-bottom: 24px;
   padding-top: 24px;
@@ -2264,4 +2265,19 @@ section.slaider-index {
 
 .paginator a:hover {
   border-color: #bdc6ca;
+}
+
+.formError {
+  animation: formErr 0.3s 3 ease-in-out;
+}
+@keyframes formErr {
+  from {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
