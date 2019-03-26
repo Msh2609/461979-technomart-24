@@ -12,39 +12,47 @@ document.body.addEventListener("click", function(e) {
 });
 
 modalclose.addEventListener("click", function() {
-  modalcart.classList.remove("show");
+  if(modalcart.classList.contains("show")) {
+    modalcart.classList.remove("show");
+  }
+  
 });
 
-modalwrightus.addEventListener("click", function() {
-  modalform.classList.add("show");
-});
+if (modalwrightus) {
+  modalwrightus.addEventListener("click", function() {
+    modalform.classList.add("show");
+  });
+}
 
 modalclose.addEventListener("click", function() {
-  modalform.classList.remove("show");
+  if(modalform.classList.contains("show")) {
+    modalform.classList.remove("show");
+  }
 });
-
 
 var slides = document.querySelectorAll(".slider-input");
 var arrowLeft = document.querySelector(".slider-arrows-left");
 var arrowRight = document.querySelector(".slider-arrows-right");
 
-arrowLeft.addEventListener("click", function() {
-  slides.forEach(function(slide, index) {
-    if (slide.checked && index === 0) return;
-    if (slide.checked) {
-      slides[index - 1].checked = true;
-    }
+if (arrowLeft) {
+  arrowLeft.addEventListener("click", function() {
+    slides.forEach(function(slide, index) {
+      if (slide.checked && index === 0) return;
+      if (slide.checked) {
+        slides[index - 1].checked = true;
+      }
+    });
   });
-});
 
-arrowRight.addEventListener("click", function() {
-  slides.forEach(function(slide, index) {
-    if (slide.checked && slides.length - 1 === index) return;
-    if (slide.checked) {
-      slides[index + 1].checked = true;
-    }
+  arrowRight.addEventListener("click", function() {
+    slides.forEach(function(slide, index) {
+      if (slide.checked && slides.length - 1 === index) return;
+      if (slide.checked) {
+        slides[index + 1].checked = true;
+      }
+    });
   });
-});
+}
 
 document
   .querySelector(".wright-us-form")
